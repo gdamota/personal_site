@@ -44,5 +44,3 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ### Deployment
 
 https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html
-
-https://glen-hosting-bucket.s3.amazonaws.com/index.html#/
