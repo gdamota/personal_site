@@ -13,8 +13,8 @@ class Home extends Component {
             "https://travel.usnews.com/dims4/USNEWS/6fa917f/2147483647/resize/1280x350%5E%3E/crop/1280x350/quality/85/?url=https://travel.usnews.com/images/hero_cabo_san_lucas_13_1280x350_Glh2RIW.jpg",
           info: [
             "Born in Newtown, CT in July of 1997",
-            "Went to High School in Cabo San Lucas, MX where I worked for Andeu - a web consulting company",
-            "Studied at University of San Diego for three years before accepting a position at Reps and Company, a live event start up focused on the accurate pricing of admissions",
+            "Attended High School in Cabo San Lucas, MX where I worked for Andeu - a web consulting company",
+            "Studied at University of San Diego for three years before accepting a position at Reps and Company - a live event start up focused on the accurate pricing of admissions",
             "Worked for the past three years as a full stack Software Engineer for Reps and Co in San Diego, CA"
           ]
         },
