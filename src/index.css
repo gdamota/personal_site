@@ -19,11 +19,6 @@ p {
   font-size: 30
 }
 
-form {
-  float: left;
-  width: 20%;
-  height: 20%;
-}
 
 ul.header li {
   display: inline;
@@ -47,10 +42,20 @@ ul.card li {
   color: white;
 }
 
-input, textarea{
+input{
   padding: 2%;
   display: block;
   margin: 0 auto;
+  width: 325px;
+  height: 1px
+}
+
+textarea{
+  padding: 2%;
+  display: block;
+  margin: 0 auto;
+  width: 327px;
+  height: 200px
 }
 
 .button {
@@ -68,6 +73,10 @@ input, textarea{
   box-shadow: 0 9px #999;
   display: table-cell;
   vertical-align: bottom;
+  width: 100px;
+  margin: -20px -50px;
+  position:relative;
+  left:44%;
 }
 
 .button:hover {background-color: #0B1359}
@@ -86,4 +95,16 @@ h2.header{
 
 .transparent div{
   background-color: transparent;
+}
+
+div.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+  color: white;
+  font-style: bold;
+  font-size: 24px
 }

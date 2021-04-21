@@ -21,8 +21,6 @@ const ContactForm = () => {
   };
 
   const onSubmit = async data => {
-    // Send form email
-    console.log(data);
     try {
       const templateParams = {
         name: data.name,
@@ -48,16 +46,6 @@ const ContactForm = () => {
   return (
     <div>
       <form id="contact-form" onSubmit={handleSubmit(onSubmit)} noValidate>
-        <h2
-          style={{
-            textAlign: "center",
-            color: "white",
-            fontSize: "20px",
-            position: "relative"
-          }}
-        >
-          Email Me!
-        </h2>
         <div>
           <div>
             <input
@@ -98,13 +86,12 @@ const ContactForm = () => {
         </div>
         <div
           style={{
-            margin: "1%",
             position: "relative",
-            left: "35%"
+            left: "5%"
           }}
         >
           <button className="button" type="submit">
-            Submit
+            Send
           </button>
         </div>
       </form>
@@ -115,7 +102,28 @@ const ContactForm = () => {
 
 class Contact extends Component {
   render() {
-    return <ContactForm />;
+    const header_style = {
+      textAlign: "center",
+      color: "white",
+      fontSize: "28px",
+      position: "relative"
+    };
+    return (
+      <div className="container">
+        <div>
+          <a
+            href="https://github.com/gdamota/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h2 style={header_style}>Check out my Github</h2>
+          </a>
+          <h2 style={header_style}>or</h2>
+          <h2 style={header_style}>Email me for more info!</h2>
+          <ContactForm />
+        </div>
+      </div>
+    );
   }
 }
 
