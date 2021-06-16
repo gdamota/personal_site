@@ -32,6 +32,22 @@ class MediaCard extends React.Component {
             ))}
           </ul>
         </div>
+        <div>
+          <ul>
+            {this.props.data.links.map(el => (
+              <li className="content">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{"font-size": "20px"}}
+                  href={el}
+                >
+                  {el}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     );
   };

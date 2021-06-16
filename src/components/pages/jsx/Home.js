@@ -1,5 +1,18 @@
 import React, {Component} from "react";
-import ListRender from "../../../components/elements/jsx/DynamicList.js";
+import MediaCard from "../../../components/elements/jsx/Card.js";
+
+const ListRender = data => {
+  console.log(data);
+  return (
+    <div className="skills-page">
+      {data.data.map(el => (
+        <div>
+          <MediaCard data={el} />
+        </div>
+      ))}
+    </div>
+  );
+};
 
 class Home extends Component {
   constructor(props) {
@@ -16,7 +29,8 @@ class Home extends Component {
             "Attended High School in Cabo San Lucas, MX where I worked for Andeu - a web consulting company",
             "Studied at University of San Diego for three years before accepting a position at Reps and Company - a live event start up focused on the accurate pricing of admissions",
             "Worked for the past three years as a full stack Software Engineer for Reps and Co in San Diego, CA"
-          ]
+          ],
+          links: []
         },
         {
           name: "Front-end and React Experience",
@@ -28,7 +42,12 @@ class Home extends Component {
             "Constructed a data cleanse application to help better structure company records for Reps' Data Scientists. The Front-end of this applicaiton was written in react and consisted of a search page for corresponding database records, a display for record information, and a form submission which would make a post request to update the selected records in the RDS MySQL instance",
             "Chrome Extension used for Inventroy tracking. This light weight chrome extension called Tagalong allowed for consistent reliable tagging of purchased inventory by company buyers. Tagalong would scrape elements from the confirmation or error page of buys and save the information in various database tables to be acted or analyzed. Tagalong would then use Jquery to insert a response message with the information sent to the back end for varification",
             "Developed a productivity app called TopNotch using Svelte. This web app included an email client, calander feature, kanban board, and notes page all located within one tab of your browser. TopNotch was integrated with Google suite and built on top of many of Googles API's.",
+            "Developed an Ecommerce webstie for the sale of yoga products. Currently named wave yoga.",
             "Wrote this lil website to help better display my resume and career experience"
+          ],
+          links: [
+            "http://wave-ecommerce.s3-website-us-east-1.amazonaws.com/",
+            "https://topnotch.rocks/"
           ]
         },
         {
@@ -64,7 +83,8 @@ class Home extends Component {
             "All json returns from the data ingestion scripts were saved in an S3 data lake prior to transformation for database insertion",
             "All EC2 deployment was automated via Ansible playbooks to quickly provision environments and deploy code changes",
             "Wrote bash scripts to package and deploy lambdas and the Tagalong Chrome Extension"
-          ]
+          ],
+          links: []
         },
         {
           name: "Client Aquisition and Management",
@@ -74,7 +94,8 @@ class Home extends Component {
           info: [
             "Sales associate for Andeu",
             "Responsabilities included marketing the companies web development abilities to Small/Medium sized business, meeting with prospective clients and creating frameworks, managing existing clients needs"
-          ]
+          ],
+          links: []
         }
       ]
     };
@@ -83,7 +104,7 @@ class Home extends Component {
   render() {
     return (
       <div className="transparent">
-        <ListRender data={this.state} />
+        <ListRender data={this.state.data} />
       </div>
     );
   }
