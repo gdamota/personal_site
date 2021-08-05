@@ -42,13 +42,10 @@ class Home extends Component {
             "Constructed a data cleanse application to help better structure company records for Reps' Data Scientists. The Front-end of this applicaiton was written in react and consisted of a search page for corresponding database records, a display for record information, and a form submission which would make a post request to update the selected records in the RDS MySQL instance",
             "Chrome Extension used for Inventroy tracking. This light weight chrome extension called Tagalong allowed for consistent reliable tagging of purchased inventory by company buyers. Tagalong would scrape elements from the confirmation or error page of buys and save the information in various database tables to be acted or analyzed. Tagalong would then use Jquery to insert a response message with the information sent to the back end for varification",
             "Developed a productivity app called TopNotch using Svelte. This web app included an email client, calander feature, kanban board, and notes page all located within one tab of your browser. TopNotch was integrated with Google suite and built on top of many of Googles API's.",
-            "Developed an Ecommerce webstie for the sale of yoga products. Currently named wave yoga.",
-            "Wrote this lil website to help better display my resume and career experience"
+            "Developed an Ecommerce webstie for the sale of floral products. Currently named moirasflora.",
+            "Wrote this website to help better display my resume and career experience"
           ],
-          links: [
-            "http://wave-ecommerce.s3-website-us-east-1.amazonaws.com/",
-            "https://topnotch.rocks/"
-          ]
+          links: ["https://www.moirasflora.com/", "https://topnotch.rocks/"]
         },
         {
           name: "Python Projects",
@@ -64,7 +61,8 @@ class Home extends Component {
             "Automated account creation on all platforms used by Reps to free up resources and cut payroll expenses",
             "Wrote a service that would run twice daily to gather pricing information from several marketplaces and store them in our database for use in Konami",
             "Selenium scripts to gather data that was not supported by third party API's"
-          ]
+          ],
+          links: []
         },
         {
           name: "AWS and DevOps",
